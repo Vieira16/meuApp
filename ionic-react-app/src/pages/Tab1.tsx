@@ -1,5 +1,8 @@
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import React, { useState } from 'react';
+
 import { FaUser, FaLock } from 'react-icons/fa';
 
 const Tab1 = () => {
@@ -7,8 +10,10 @@ const Tab1 = () => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
+    // Salva os dados no Local Storage
     localStorage.setItem('userName', name);
     localStorage.setItem('userPassword', password);
+    alert('Dados salvos no Local Storage!');
   };
 
   return (

@@ -1,0 +1,28 @@
+{
+  "name": "ionic-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "ionic serve",
+    "build": "ionic build",
+    "test": "ionic test",
+    "e2e": "ionic e2e"
+  },
+  "dependencies": {
+    "@ionic/react": "^5.0.0",
+    "@ionic/react-router": "^5.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {
+    "@ionic/cli": "^6.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "typescript": "^4.0.0"
+  },
+  "homepage": ".",
+  "license": "MIT"
+}
