@@ -1,0 +1,64 @@
+criar aplicativo 
+desenhar tela qualquer
+implementação para salvar em cache (local storage ou uma biblioteca angler storage)
+buildar aplicação com os comandos do ionic
+
+
+
+Sim, é totalmente possível rodar e testar sua aplicação Ionic sem ter um celular físico conectado.
+
+A melhor maneira de fazer isso é usando um Emulador Android (também chamado de AVD - Android Virtual Device), que simula um dispositivo Android no seu computador.
+
+💻 Como Rodar o App Sem Celular
+Você precisará usar o Android Studio para criar e gerenciar um Emulador Android.
+
+1. Configurar o Emulador (AVD)
+Abra o Android Studio.
+
+Vá em Tools (Ferramentas) na barra de menu.
+
+Selecione Device Manager (ou AVD Manager, dependendo da sua versão).
+
+Clique em Create device (Criar dispositivo).
+
+Escolha um modelo de celular (ex: Pixel) e uma versão do Android (API Level). Certifique-se de que a imagem do sistema operacional está instalada.
+
+Siga as instruções para criar e baixar o AVD.
+
+Assim que o AVD estiver criado, você pode iniciá-lo clicando no botão de Play ao lado dele na lista do Device Manager.
+
+2. Rodar o Aplicativo no Emulador (Duas Opções)
+Com o emulador iniciado, você pode usá-lo como seu dispositivo de teste.
+
+Opção A: Usando o CLI (Recomendado)
+O Ionic CLI detectará automaticamente o emulador aberto.
+
+Bash
+
+ionic capacitor run android --livereload --external
+Este comando irá:
+
+Fazer o build e o sync do seu projeto.
+
+Compilar e instalar o aplicativo no emulador aberto.
+
+Permitir que você veja as alterações do código em tempo real (live reload).
+
+Opção B: Usando o Android Studio
+Abra o projeto Android no Studio:
+
+Bash
+
+ionic capacitor open android
+Na barra de ferramentas do Android Studio, o nome do seu emulador deve aparecer no menu dropdown de dispositivos.
+
+Certifique-se de que o nome do seu emulador está selecionado.
+
+Clique no botão de Play (o triângulo verde).
+
+O Studio irá compilar o app e instalá-lo no emulador.
+
+Observação de Performance
+Rodar emuladores pode exigir bastante memória e poder de processamento do seu computador. Certifique-se de ter o Haxm (Intel) ou o Hyper-V (Windows) configurado corretamente (isso geralmente é feito durante a instalação do Android Studio) para que o emulador funcione de forma otimizada.
+
+Você gostaria de tentar rodar no Emulador e precisa de ajuda para configurar o AVD Manager no Android Studio?
